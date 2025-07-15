@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/home.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Responsive Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+        <form action="#" id="registration-form">
+            <!-- All form sections are now within a single 'form-content' div for clarity -->
+            <div class="form-content">
+                <!-- Personal Details Section -->
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" id="fullName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" id="dob" placeholder="Enter birth date" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" id="mobileNumber" placeholder="Enter mobile number" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select id="gender" required>
+                                <option disabled selected>Select gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" id="occupation" placeholder="Enter your occupation" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account Type & Academic Details Section -->
+                <div class="details ID">
+                    <span class="title">Account & Academic Details</span>
+                    <div class="fields">
+                        <div class="input-field account-type-field">
+                            <h2>Account</h2>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="accountType" value="tutor" id="radioTutor" required>
+                                    <span class="radio-custom"></span>
+                                    Tutor
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="accountType" value="student" id="radioStudent" required>
+                                    <span class="radio-custom"></span>
+                                    Student
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-field id-number-field">
+                            <label>School(or)college</label>
+                            <input type="text" id="institutionName" placeholder="Enter Institution Name" required>
+                        </div>
+                        <div class="input-field issued-authority-field">
+                            <label>Grade</label>
+                            <input type="text" id="grade" placeholder="Enter your grade" required>
+                        </div>
+                        <div class="input-field issued-state-field">
+                            <label>Location</label>
+                            <input type="text" id="location" placeholder="Enter location" required>
+                        </div>
+                        <div class="input-field issued-date-field">
+                            <label>Timing</label>
+                            <input type="time" id="timing" placeholder="Enter your required timing" required>
+                        </div>
+                        <div class="input-field expiry-date-field">
+                            <label>Duration(hrs)</label>
+                            <input type="number" id="duration" placeholder="Enter Duration" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Address Details Section -->
+                <div class="details address">
+                    <span class="title">Address Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type</label>
+                            <input type="text" id="addressType" placeholder="Permanent or Temporary" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" id="nationality" placeholder="Enter nationality" required>
+                        </div>
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" id="state" placeholder="Enter your state" required>
+                        </div>
+                        <div class="input-field">
+                            <label>District</label>
+                            <input type="text" id="district" placeholder="Enter your district" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Block Number</label>
+                            <input type="number" id="blockNumber" placeholder="Enter block number" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Ward Number</label>
+                            <input type="number" id="wardNumber" placeholder="Enter ward number" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Family Details Section -->
+                <div class="details family">
+                    <span class="title">Family Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Father Name</label>
+                            <input type="text" id="fatherName" placeholder="Enter father name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Mother Name</label>
+                            <input type="text" id="motherName" placeholder="Enter mother name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Grandfather</label>
+                            <input type="text" id="grandfatherName" placeholder="Enter grandfather name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Spouse Name</label>
+                            <input type="text" id="spouseName" placeholder="Enter spouse name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Father in Law</label>
+                            <input type="text" id="fatherInLawName" placeholder="Father in law name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Mother in Law</label>
+                            <input type="text" id="motherInLawName" placeholder="Mother in law name" required>
+                        </div>
+                    </div>
+                    <!-- Final Register/Submit Button for the entire form -->
+                    <button class="sumbit" type="submit">
+                        <span class="btnText">Register</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Message box for user feedback -->
+    <div id="message-box" style="display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 15px 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 1000; font-size: 16px; font-weight: 500; text-align: center;"></div>
+
+    <!-- Corrected script tag path and type -->
+    <script type="module" src="../scrpt/script.js"></script>
+</body>
+</html>

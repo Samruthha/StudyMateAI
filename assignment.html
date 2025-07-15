@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Assignments - StudyMateAI</title>
+    <link rel="stylesheet" href="../Style/assignment.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>Your Uploaded Files</header>
+        <div class="file-list-container">
+            <p id="loading-message" class="message">Loading your files...</p>
+            <p id="no-files-message" class="message" style="display: none;">No files uploaded yet.</p>
+            <ul id="uploaded-files-list" class="uploaded-files-list">
+                <!-- File items will be inserted here by JavaScript -->
+            </ul>
+        </div>
+
+        <div id="summary-section" class="summary-section" style="display: none;">
+            <h3>Summary of Chosen File</h3>
+            <div id="summary-content" class="summary-content">
+                <p id="summary-text">Summary will appear here...</p>
+                <p id="summary-loading" style="display: none;"><i class="fas fa-spinner fa-spin"></i> Generating summary...</p>
+                <p id="summary-error" style="display: none; color: red;"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message box for feedback -->
+    <div id="assignment-message-box" style="display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 15px 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 1000; font-size: 16px; font-weight: 500; text-align: center;"></div>
+
+    <!-- Link to the assignment.js script -->
+    <script type="module" src="../scrpt/assignment.js"></script>
+</body>
+</html>

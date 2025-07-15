@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f0f2f5; /* Light grey background */
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header {
+    color: #4070f4; /* Blue color */
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.file-list-container {
+    margin-top: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fcfcfc;
+    min-height: 200px; /* Ensure it has some height even if empty */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.uploaded-files-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e9f0ff; /* Light blue background for items */
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.file-item:hover {
+    transform: translateY(-3px);
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.file-icon {
+    font-size: 24px;
+    color: #4070f4;
+    margin-right: 15px;
+}
+
+.file-name {
+    font-weight: 500;
+    color: #333;
+    font-size: 16px;
+    word-break: break-all; /* Break long file names */
+}
+
+.file-meta {
+    font-size: 13px;
+    color: #777;
+    margin-top: 2px;
+}
+
+.file-actions {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.action-btn {
+    background: #4070f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none; /* For download link */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.action-btn:hover {
+    background: #265df2;
+}
+
+.action-btn i {
+    font-size: 16px;
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Summary Section Styling */
+.summary-section {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #e9f0ff; /* Light blue background for summary */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.summary-section h3 {
+    color: #4070f4;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.summary-content {
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 100px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    word-wrap: break-word; /* Break long words */
+}
+
+.summary-content p {
+    margin: 0;
+}
+
+/* Spinner for loading summary */
+.fa-spinner {
+    margin-right: 8px;
+}
+
+/* Specific styling for the summary error message */
+#summary-error {
+    color: green; /* Changed from red to green */
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    header {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .file-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .file-info {
+        margin-bottom: 10px;
+    }
+
+    .file-actions {
+        width: 100%;
+        justify-content: flex-end;
+        margin-left: 0;
+    }
+
+    .summary-section {
+        padding: 15px;
+    }
+}

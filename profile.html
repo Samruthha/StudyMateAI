@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - StudyMateAI</title>
+    <link rel="stylesheet" href="../Style/profile.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- FontAwesome for social icons (if needed, or use Unicons/SVG) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Breadcrumb / Navigation -->
+        <nav class="breadcrumb">
+            <a href="../webpages/mainhome.html">Home</a> / <a href="#">User</a> / <span class="current-page">User Profile</span>
+        </nav>
+
+        <div class="main-content">
+            <!-- Left Column: User Card & Social Links -->
+            <div class="left-column">
+                <div class="profile-card user-info-card">
+                    <div class="avatar-section">
+                        <img id="user-avatar" src="https://placehold.co/120x120/E0E0E0/333333?text=Avatar" alt="User Avatar" class="user-avatar">
+                        <h2 id="user-full-name" class="user-name">John Doe</h2>
+                        <p id="user-occupation" class="user-title">Full Stack Developer</p>
+                        <p id="user-location" class="user-location"><i class="uil uil-map-marker"></i> Bay Area, San Francisco, CA</p>
+                    </div>
+                    <div class="profile-actions">
+                        <button class="follow-btn">Follow</button>
+                        <button class="message-btn">Message</button>
+                    </div>
+                </div>
+
+                <div class="profile-card social-links-card">
+                    <ul class="social-list">
+                        <li>
+                            <i class="uil uil-globe"></i>
+                            <span>Website</span>
+                            <a href="#" id="website-link" target="_blank">https://bootdey.com</a>
+                        </li>
+                        <li>
+                            <i class="uil uil-github-alt"></i>
+                            <span>Github</span>
+                            <a href="#" id="github-link" target="_blank">bootdey</a>
+                        </li>
+                        <li>
+                            <i class="uil uil-twitter"></i>
+                            <span>Twitter</span>
+                            <a href="#" id="twitter-link" target="_blank">@bootdey</a>
+                        </li>
+                        <li>
+                            <i class="uil uil-instagram"></i>
+                            <span>Instagram</span>
+                            <a href="#" id="instagram-link" target="_blank">bootdey</a>
+                        </li>
+                        <li>
+                            <i class="uil uil-facebook-f"></i>
+                            <span>Facebook</span>
+                            <a href="#" id="facebook-link" target="_blank">bootdey</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column: Personal Details & Project Status -->
+            <div class="right-column">
+                <div class="profile-card personal-details-card">
+                    <div class="details-row">
+                        <span class="detail-label">Full Name</span>
+                        <span id="detail-full-name" class="detail-value">Kenneth Valdez</span>
+                    </div>
+                    <div class="details-row">
+                        <span class="detail-label">Email</span>
+                        <span id="detail-email" class="detail-value">fip@jukmuh.al</span>
+                    </div>
+                    <div class="details-row">
+                        <span class="detail-label">Grade</span>
+                        <span id="detail-phone" class="detail-value">(239) 816-9029</span>
+                    </div>
+                    <div class="details-row">
+                        <span class="detail-label">Mobile</span>
+                        <span id="detail-mobile" class="detail-value">(320) 380-4539</span>
+                    </div>
+                    <div class="details-row">
+                        <span class="detail-label">Address</span>
+                        <span id="detail-address" class="detail-value">Bay Area, San Francisco, CA</span>
+                    </div>
+                </div>
+
+                <div class="project-status-section">
+                    <div class="profile-card project-status-card">
+                        <h3 class="project-status-title">assignment <span class="project-status-label">Project Status</span></h3>
+                        <div class="progress-item">
+                            <span class="progress-label">Web Design</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                            <span class="progress-percentage">80%</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">Website Markup</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 72%;"></div>
+                            </div>
+                            <span class="progress-percentage">72%</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">One Page</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 89%;"></div>
+                            </div>
+                            <span class="progress-percentage">89%</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">Mobile Template</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 55%;"></div>
+                            </div>
+                            <span class="progress-percentage">55%</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">Backend API</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 66%;"></div>
+                            </div>
+                            <span class="progress-percentage">66%</span>
+                        </div>
+                    </div>
+
+                    <div class="profile-card project-status-card">
+                        <h3 class="project-status-title">assignment <span class="project-status-label">Project Status</span></h3>
+                        <div class="progress-item">
+                            <span class="progress-label">Web Design</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                            <span class="progress-percentage">80%</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">Website Markup</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 72%;"></div>
+                            </div>
+                            <span class="progress-percentage">72%</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">One Page</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 89%;"></div>
+                            </div>
+                            <span class="progress-percentage">89%</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">Mobile Template</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 55%;"></div>
+                            </div>
+                            <span class="progress-percentage">55%</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">Backend API</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 66%;"></div>
+                            </div>
+                            <span class="progress-percentage">66%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message box for user feedback (optional, but good for debugging) -->
+    <div id="message-box" style="display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 15px 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 1000; font-size: 16px; font-weight: 500; text-align: center;"></div>
+
+    <script type="module">
+        // Firebase imports (for authentication and data fetching)
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // Firebase configuration (use the same as your other files)
+        const firebaseConfig = {
+            apiKey: "AIzaSyAgi3e7EH5FRi5GIdrr9bUh5hGlFXIRVR4",
+            authDomain: "studymateai-d5bd3.firebaseapp.com",
+            projectId: "studymateai-d5bd3",
+            storageBucket: "studymateai-d5bd3.firebasestorage.app",
+            messagingSenderId: "445694491620",
+            appId: "1:445694491620:web:8c3cd07afe00fe981d65f1",
+            measurementId: "G-R2E19SZT2Y"
+        };
+
+        console.log("Profile Page: Firebase config loaded:", firebaseConfig.projectId);
+
+        // Initialize Firebase
+        let app;
+        let auth;
+        let db;
+        let currentUser = null;
+
+        try {
+            app = initializeApp(firebaseConfig);
+            auth = getAuth(app);
+            db = getFirestore(app);
+            console.log("Profile Page: Firebase app and auth initialized.");
+        } catch (initError) {
+            console.error("Profile Page: Error initializing Firebase app:", initError);
+            showMessage("Failed to initialize Firebase. Please try again later.", true);
+            setTimeout(() => {
+                window.location.href = "/index.html"; // Changed from ../index.html
+            }, 2000);
+        }
+
+        // Get references to HTML elements for dynamic content
+        const userAvatar = document.getElementById('user-avatar');
+        const userFullName = document.getElementById('user-full-name');
+        const userOccupation = document.getElementById('user-occupation');
+        const userLocation = document.getElementById('user-location');
+
+        const detailFullName = document.getElementById('detail-full-name');
+        const detailEmail = document.getElementById('detail-email');
+        const detailPhone = document.getElementById('detail-phone'); // Assuming mobileNumber from registration maps here
+        const detailMobile = document.getElementById('detail-mobile'); // Assuming mobileNumber from registration maps here
+        const detailAddress = document.getElementById('detail-address'); // Will combine address fields
+
+        const messageBox = document.getElementById('message-box');
+
+        // Function to display messages
+        function showMessage(message, isError = false) {
+            if (messageBox) {
+                messageBox.textContent = message;
+                messageBox.style.display = 'block';
+                messageBox.style.color = isError ? 'red' : 'green';
+                messageBox.style.backgroundColor = isError ? '#f8d7da' : '#d4edda';
+                messageBox.style.borderColor = isError ? '#f5c6cb' : '#c3e6cb';
+                messageBox.style.padding = '15px 25px'; // Adjusted padding for better look
+                messageBox.style.borderRadius = '8px';
+                messageBox.style.boxShadow = '0 4px 15px rgba(0,0,0,0.2)';
+                messageBox.style.zIndex = '1000';
+                messageBox.style.fontSize = '16px';
+                messageBox.style.fontWeight = '500';
+                messageBox.style.textAlign = 'center';
+                messageBox.style.display = 'block'; // Ensure it's visible
+
+                setTimeout(() => {
+                    messageBox.style.display = 'none';
+                }, 5000);
+            } else {
+                console.warn('Message box element not found. Message:', message);
+            }
+        }
+
+        /**
+         * Populates the HTML elements with user profile data.
+         * @param {Object} data - The user profile data object fetched from Firestore.
+         */
+        function populateProfile(data) {
+            if (!data) {
+                console.warn("No data provided to populate profile.");
+                return;
+            }
+
+            // Left Column: User Info Card
+            // userAvatar.src = data.photoURL || 'https://placehold.co/120x120/E0E0E0/333333?text=Avatar'; // Use actual photoURL if available
+            userFullName.textContent = data.fullName || 'N/A';
+            userOccupation.textContent = data.occupation || 'N/A';
+            // Combine address details for user-location
+            userLocation.innerHTML = `<i class="uil uil-map-marker"></i> ${data.location || 'N/A'}`;
+
+            // Social Links (placeholders for now, as not in your form data)
+            // You would update these if you add social link fields to your registration
+            document.getElementById('website-link').textContent = data.website || 'bootdey.com';
+            document.getElementById('github-link').textContent = data.github || 'bootdey';
+            document.getElementById('twitter-link').textContent = data.twitter || '@bootdey';
+            document.getElementById('instagram-link').textContent = data.instagram || 'bootdey';
+            document.getElementById('facebook-link').textContent = data.facebook || 'bootdey';
+
+
+            // Right Column: Personal Details Card
+            detailFullName.textContent = data.fullName || 'N/A';
+            detailEmail.textContent = data.email || 'N/A';
+            detailPhone.textContent = data.mobileNumber || 'N/A'; // Assuming mobileNumber maps to Phone
+            detailMobile.textContent = data.mobileNumber || 'N/A'; // Assuming mobileNumber maps to Mobile
+            // Combine address details for detail-address
+            detailAddress.textContent = `${data.blockNumber || ''} ${data.wardNumber || ''}, ${data.district || ''}, ${data.state || ''}, ${data.nationality || ''}`.trim().replace(/, ,/g, ',').replace(/^, /g, '').replace(/ ,$/g, '') || 'N/A';
+
+            // Project Status Cards (these are static placeholders from your image)
+            // If you want dynamic project status, you'd need to add those fields to your Firestore profile.
+            // For now, they remain as they are in the HTML.
+        }
+
+        /**
+         * Fetches user profile data directly from Firestore.
+         * @param {string} uid - The user's UID.
+         */
+        async function fetchProfileFromFirestore(uid) {
+            try {
+                const userDocRef = doc(db, `artifacts/${firebaseConfig.projectId}/users/${uid}/profile/main`);
+                const docSnap = await getDoc(userDocRef);
+
+                if (docSnap.exists()) {
+                    const data = docSnap.data();
+                    console.log("Profile data fetched from Firestore:", data);
+                    populateProfile(data);
+                    showMessage("Profile data loaded successfully!", false);
+                    // Optionally, save to sessionStorage for future faster access
+                    sessionStorage.setItem('userProfileData', JSON.stringify(data));
+                } else {
+                    showMessage("No complete profile found. Please register your details.", true);
+                    console.log("No profile document found in Firestore for UID:", uid);
+                    // Redirect to registration if profile is incomplete
+                    setTimeout(() => {
+                        window.location.href = "/webpages/registration.html"; // Changed from registration.html
+                    }, 2000);
+                }
+            } catch (error) {
+                console.error("Error fetching profile from Firestore:", error);
+                showMessage(`Error fetching profile: ${error.message}. Please try again.`, true);
+            }
+        }
+
+        // Listen for authentication state changes when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    currentUser = user;
+                    console.log("Profile Page: User is logged in:", currentUser.uid);
+
+                    // Try to load from sessionStorage first (faster)
+                    const storedProfileData = sessionStorage.getItem('userProfileData');
+                    if (storedProfileData) {
+                        try {
+                            const profileData = JSON.parse(storedProfileData);
+                            populateProfile(profileData);
+                            showMessage("Profile data loaded from session storage.", false);
+                        } catch (e) {
+                            console.error("Error parsing session storage data:", e);
+                            showMessage("Error loading profile data. Attempting to fetch from Firestore...", true);
+                            await fetchProfileFromFirestore(currentUser.uid);
+                        }
+                    } else {
+                        // If not in sessionStorage, fetch from Firestore
+                        showMessage("Fetching profile data from Firestore...", false);
+                        await fetchProfileFromFirestore(currentUser.uid);
+                    }
+                } else {
+                    // User is not logged in, redirect to login page
+                    console.log("Profile Page: No user logged in. Redirecting.");
+                    showMessage("You need to be logged in to view your profile.", true);
+                    setTimeout(() => {
+                        window.location.href = "/index.html"; // Changed from ../index.html
+                    }, 2000);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

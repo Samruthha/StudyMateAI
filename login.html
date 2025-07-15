@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../scrpt/main.js" defer type="module"></script>
+  <title>Login Form | StudymateAI</title>
+  <link rel="stylesheet" href="../Style/login.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#">
+      <h2>Login</h2>
+        <div class="input-field">
+        <input type="text" >
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" >
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <!-- Add this div for messages -->
+      <div id="message-box" style="display: none; padding: 10px; margin-bottom: 15px; border-radius: 5px; background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;"></div>
+
+      <div class="input">
+      <button id="google-login-btn" class="google-button"><i class="fab fa-google"></i>Signup with google</button>
+      </div>
+      <div class="register">
+        <p>Don't have an account? <a href="#">Register</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
